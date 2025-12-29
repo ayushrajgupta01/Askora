@@ -44,7 +44,6 @@ OPENAI_API_KEY=your_openai_api_key
 MONGO_URI=your_mongodb_connection_string
 PORT=8080
 ```
--Run the project
 
 **Start backend:**
 -npm run server
@@ -53,22 +52,26 @@ PORT=8080
 ```
 cd client
 npm start
-Access the app
-Open your browser and go to http://localhost:5173
 ```
+-Access the app
+[Open your browser and go to](http://localhost:5173)
+---
 
 **Usage**
 -Chat with Askora in real time
 -Code snippets will have syntax highlighting thanks to Highlight.js
 -All conversations are stored in MongoDB
+---
 
 **Contributing**
 -This is a personal project, but feedback and suggestions are welcome!
 -Open issues to report bugs or request features
+---
 
 **Open issues**
 -Fork the repository
 -Submit pull requests
+---
 
 **Links**
 [Askora GitHub](https://github.com/ayushrajgupta01/Askora)
