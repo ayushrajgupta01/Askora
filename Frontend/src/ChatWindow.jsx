@@ -4,6 +4,8 @@ import { useContext, useEffect, useState } from "react";
 import { MyContext } from "./MyContext.jsx";
 import {PulseLoader} from "react-spinners";
 
+const API_BASE_URL = import.meta.env.VITE_API_URL
+
 function ChatWindow() {
     const {prompt, setPrompt, reply, setReply, currThreadId, setPrevChats, setNewChat} = useContext(MyContext);
     const [loading, setLoading] = useState(false);
@@ -23,7 +25,7 @@ function ChatWindow() {
             })
         };
         try {
-            const response = await fetch("http://localhost:8080/api/chat", options);
+            const response = await fetch(`${API_BASE_URL}/api/chat`, options);
             const res = await response.json();
             setReply(res.reply);
         } catch(err) {
