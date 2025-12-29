@@ -34,7 +34,6 @@ Askora is a modern, ChatGPT-inspired web platform that enables users to interact
 ```
 npm install
 cd client
-npm install
 ```
 
 **Setup environment variables**
@@ -47,7 +46,7 @@ PORT=8080
 
 **Start backend:**  
 ```
-npm run server
+npm run server.js
 ```
 
 **Start frontend:**
@@ -74,5 +73,4 @@ npm start
 
 **Links**  
 *[Askora GitHub](https://github.com/ayushrajgupta01/Askora)  
-*[Try Askora Online](https://yourwebsite.com)
 
