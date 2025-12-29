@@ -25,56 +25,52 @@ Askora is a modern, ChatGPT-inspired web platform that enables users to interact
 ---
 
 ## Installation
-
-1. **Clone the repository**  
-   ```bash
+**Clone the repository**  
+   ```
    git clone https://github.com/ayushrajgupta01/askora.git
    cd askora
-Install dependencies
-
-bash
-Copy code
+   ```
+**Install dependencies**
+```
 npm install
 cd client
 npm install
-Setup environment variables
-Create a .env file in the root directory:
+```
 
-init
+**Setup environment variables**
+-Create a .env file in the root directory:
+```
 OPENAI_API_KEY=your_openai_api_key
 MONGO_URI=your_mongodb_connection_string
-PORT=5000
-Run the project
+PORT=8080
+```
+-Run the project
 
-Start backend:
+**Start backend:**
+-npm run server
 
-bash
-Copy code
-npm run server
-Start frontend:
-
-bash
-Copy code
+**Start frontend:**
+```
 cd client
 npm start
 Access the app
-Open your browser and go to http://localhost:3000
+Open your browser and go to http://localhost:5173
+```
 
-Usage
-Chat with Askora in real time
+**Usage**
+-Chat with Askora in real time
+-Code snippets will have syntax highlighting thanks to Highlight.js
+-All conversations are stored in MongoDB
 
-Code snippets will have syntax highlighting thanks to Highlight.js
+**Contributing**
+-This is a personal project, but feedback and suggestions are welcome!
+-Open issues to report bugs or request features
 
-All conversations are stored in MongoDB
+**Open issues**
+-Fork the repository
+-Submit pull requests
 
-Contributing
-Contributions are welcome! Feel free to:
+**Links**
+[Askora GitHub](https://github.com/ayushrajgupta01/Askora)
+[Try Askora Online](https://yourwebsite.com)
 
-Open issues
-
-Fork the repository
-
-Submit pull requests
-
-License
-This project is licensed under the MIT License.
