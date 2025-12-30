@@ -37,7 +37,6 @@ function Sidebar() {
         try {
             const response= await fetch(`${API_BASE_URL}/api/thread/${newThreadId}`);
             const res = await response.json();
-            console.log(res);
             setPrevChats(res);
             setNewChat(false);
             setReply(null);
@@ -50,7 +49,6 @@ function Sidebar() {
         try {
             const response = await fetch(`${API_BASE_URL}/api/thread/${threadId}`, {method:"DELETE"});
             const res= await response.json();
-            console.log(res);
             setAllThreads(prev => prev.filter(thread => thread.threadId !== threadId));
             if(threadId === currThreadId) {
                 CreateNewChat();
